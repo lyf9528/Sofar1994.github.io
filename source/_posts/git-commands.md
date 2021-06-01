@@ -20,6 +20,7 @@ summary: git常用命令汇总
 ### 1. 常用
 
 ```bash
+
      git fetch --all && git reset --hard origin/develop && git pull  # 强拉覆盖本地
      git remote add origin git@github.com:                           # 配置远程git版本库
      git pull origin master                                          # 下载代码及快速合并
@@ -41,6 +42,7 @@ summary: git常用命令汇总
 ### 2. 别名 alias
 
 ```bash
+
      git config --global alias.br="branch"                 # 创建/查看本地分支
      git config --global alias.co="checkout"               # 切换分支
      git config --global alias.cb="checkout -b"            # 创建并切换到新分支
@@ -55,6 +57,7 @@ summary: git常用命令汇总
 ### 3. 创建版本库
 
 ```bash
+
      git clone <url>                 # 克隆远程版本库
      git init                        # 初始化本地版本库
 ```
@@ -62,6 +65,7 @@ summary: git常用命令汇总
 ### 4. 修改和提交
 
 ```bash
+
      git status                      # 查看状态
      git diff                        # 查看变更内容
      git add .                       # 跟踪所有改动过的文件
@@ -76,6 +80,7 @@ summary: git常用命令汇总
 ### 5. 查看历史
 
 ```bash
+
      git log                         # 查看提交历史
      git log -p <file>               # 查看指定文件的提交历史
      git blame <file>                # 以列表方式查看指定文件的提交历史
@@ -84,6 +89,7 @@ summary: git常用命令汇总
 ### 6. 撤销
 
 ```bash
+
     git reset --hard HEAD           # 撤消工作目录中所有未提交文件的修改内容
     git reset --hard <version>      # 撤销到某个特定版本
     git checkout HEAD <file>        # 撤消指定的未提交文件的修改内容
@@ -94,6 +100,7 @@ summary: git常用命令汇总
 ### 7. 分支与标签
 
 ```bash
+
      git branch                      # 显示所有本地分支
     git checkout <branch/tag>       # 切换到指定分支或标签
      git branch <new-branch>         # 创建新分支
@@ -109,6 +116,7 @@ summary: git常用命令汇总
 ### 8. 合并与衍合
 
 ```bash
+
      git merge <branch>              # 合并指定分支到当前分支
      git merge --abort               # 取消当前合并，重建合并前状态
      git merge dev -Xtheirs          # 以合并dev分支到当前分支，有冲突则以dev分支为准
@@ -118,6 +126,7 @@ summary: git常用命令汇总
 ### 9.  远程操作
 
 ```bash
+
      git remote -v                   # 查看远程版本库信息
      git remote show <remote>        # 查看指定远程版本库信息
      git remote add <remote> <url>   # 添加远程版本库
@@ -132,6 +141,7 @@ summary: git常用命令汇总
 ### 10. 打包
 
 ```bash
+
      git archive --format=zip --output ../file.zip master    # 将master分支打包成file.zip文件，保存在上一级目录
      git archive --format=zip --output ../v1.2.zip v1.2      # 打包v1.2标签的文件，保存在上一级目录v1.2.zip文件中
      git archive --format=zip v1.2 > ../v1.2.zip             # 作用同上一条命令
@@ -147,6 +157,7 @@ summary: git常用命令汇总
 ### 12. 远程与本地合并
 
 ```bash
+
      git init                              # 初始化本地代码仓
      git add .                             # 添加本地代码
      git commit -m "add local source"      # 提交本地代码

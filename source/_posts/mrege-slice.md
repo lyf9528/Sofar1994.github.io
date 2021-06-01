@@ -18,6 +18,7 @@ categories:
 就像其他任何可变参数函数一样.
 
 ```go
+
     func foo(is... int) {
         for i := 0; i < len(is); i++ {
             fmt.Println(is[i])
@@ -27,4 +28,5 @@ categories:
     func main() {
         foo([]int{1,2,3,4,5}...)
     }
+    
 ```

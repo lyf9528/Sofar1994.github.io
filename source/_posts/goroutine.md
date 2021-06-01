@@ -21,6 +21,7 @@ Go 语言提供了 sync 和 channel 两种方式支持协程(goroutine)的并发
 
 
 ```go
+
 import (
 	"fmt"
 	"sync"
@@ -43,6 +44,7 @@ func main() {
 	wg.Wait()
 	fmt.Println("Done!")
 }
+
 ```
 
 
@@ -56,6 +58,7 @@ func main() {
 使用 channel 信道，可以在协程之间传递消息。阻塞等待并发协程返回消息。
 
 ```go
+
 var ch = make(chan string, 10) // 创建大小为 10 的缓冲信道
 
 func download(url string) {
@@ -74,6 +77,7 @@ func main() {
 	}
 	fmt.Println("Done!")
 }
+
 ```
 
 ## 3.读写锁
@@ -83,6 +87,7 @@ func main() {
 在读锁占用的情况下，会阻止写但不阻止读，写锁会阻止读写，所以add的时候开启读锁而不是写锁可以提高性能.
 
 ```go
+
 var counter int = 0
 func main() {
 	start := time.Now()
@@ -112,5 +117,6 @@ func add(a, b int, lock *sync.RWMutex)  {
 	fmt.Printf("%d: %d + %d = %d\n", counter, a, b, c)
 	lock.Unlock()
 }
+
 ```
 
