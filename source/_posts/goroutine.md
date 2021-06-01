@@ -1,14 +1,15 @@
 ---
-title: goroutine
+title: 小技巧:Go并发编程示例
 author: Sofar
 top: false
 cover: false
 toc: true
 mathjax: true
-date: 2021-05-07 18:54:05
+date: true
 password:
 summary:
 tags:
+- 小技巧
 categories:
 ---
 
@@ -18,7 +19,8 @@ Go 语言提供了 sync 和 channel 两种方式支持协程(goroutine)的并发
 
 ## 1.sync
 
-```
+
+```go
 import (
 	"fmt"
 	"sync"
@@ -42,14 +44,18 @@ func main() {
 	fmt.Println("Done!")
 }
 ```
+
+
 + wg.Add(3) : 为wg添加一个计数
 + wg.Done() : 每执行wg.Done()一次，减去一个计数
 + wg.Wait() : 阻塞等待wg计数等于0
 + go download() : go 开启新的协程的关键字， 在新的协程中执行download()函数
 
+
 ## 2.channel
 使用 channel 信道，可以在协程之间传递消息。阻塞等待并发协程返回消息。
-```
+
+```go
 var ch = make(chan string, 10) // 创建大小为 10 的缓冲信道
 
 func download(url string) {
@@ -76,7 +82,7 @@ func main() {
 小技巧：
 在读锁占用的情况下，会阻止写但不阻止读，写锁会阻止读写，所以add的时候开启读锁而不是写锁可以提高性能.
 
-```
+```go
 var counter int = 0
 func main() {
 	start := time.Now()
