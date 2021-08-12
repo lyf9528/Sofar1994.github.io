@@ -1,5 +1,5 @@
 ---
-title: byteFormat
+title: byte格式化
 author: Sofar
 top: false
 cover: false
@@ -9,7 +9,8 @@ date: 2021-06-11 18:57:22
 coverImg:
 password:
 summary:
-tags:
+tags: 
+- 杂项
 categories:
 ---
 
