@@ -1,18 +1,15 @@
 ---
-title: 小技巧:git常用命令
-date: 2021-04-16 12:46:34
-author: sofar
-categories: Git
-tags:
-  - 小技巧
-img: #/source/images/xxx.jpg
+title: git常用命令
+author: Sofar
 top: false
 cover: false
-coverImg: #/images/1.jpg
-password: #8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92
 toc: true
-mathjax: false
-summary: git常用命令汇总
+mathjax: true
+date: 2021-06-01 18:32:58
+password:
+summary:
+tags: 
+categories: git
 ---
 
 ## git常用命令
@@ -20,7 +17,6 @@ summary: git常用命令汇总
 ### 1. 常用
 
 ```bash
-
      git fetch --all && git reset --hard origin/develop && git pull  # 强拉覆盖本地
      git remote add origin git@github.com:                           # 配置远程git版本库
      git pull origin master                                          # 下载代码及快速合并

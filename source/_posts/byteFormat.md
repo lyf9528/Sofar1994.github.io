@@ -10,8 +10,8 @@ coverImg:
 password:
 summary:
 tags: 
-- 杂项
-categories:
+- 
+categories: go
 ---
 
 ### 简单版格式化byte

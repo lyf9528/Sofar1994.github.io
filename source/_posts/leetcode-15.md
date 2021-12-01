@@ -1,7 +1,7 @@
 ---
-title: leetcode-15 ThreeSum
+title: 15-三数之和
 author: Sofar
-top: true
+top: false
 cover: false
 toc: true
 mathjax: true
@@ -10,9 +10,8 @@ coverImg:
 password:
 summary:
 tags:
-- leetCode
 - 双指针
-categories:
+categories: 算法
 ---
 
 ## 思路

@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: sofar的小站
-subtitle: '写点有趣的'
+title: sofar`s Blog
+subtitle: 
 description: 'Write something interesting'
-keywords: "Go Golang PHP Sofar 算法"
+keywords: ""
 author: sofar
 language: zh-CN
 timezone: 'Asia/ShangHai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://Sofar1994.github.io
+url: http://sofar1994.github.io
 # permalink: :year/:month/:day/:title/
 permalink: :title/
 permalink_defaults:
@@ -48,15 +48,10 @@ future: true
 # _config.yml
 highlight:
   enable: false
-  auto_detect: false
-  line_number: true
-  tab_replace: ''
-  wrap: true
-  hljs: false
 prismjs:
   enable: true
   preprocess: true
-  line_number: true
+  line_number: false
   tab_replace: ''
 
 # Home page setting
@@ -100,7 +95,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: matery
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

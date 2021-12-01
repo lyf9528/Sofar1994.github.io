@@ -1,16 +1,16 @@
 ---
-title: 小技巧:Go并发编程示例
+title: Go并发编程示例
 author: Sofar
 top: false
 cover: false
 toc: true
 mathjax: true
-date: true
+date: 2021-06-01 18:32:58
 password:
 summary:
 tags:
-- 小技巧
-categories:
+- 并发编程 
+categories: go
 ---
 
 Go 语言提供了 sync 和 channel 两种方式支持协程(goroutine)的并发。

@@ -1,5 +1,5 @@
 ---
-title: leetcode-303-区域和检索 - 数组不可变
+title: 303-区域和检索
 author: Sofar
 top: false
 cover: false
@@ -10,10 +10,9 @@ coverImg:
 password:
 summary:
 tags:
-- leetcode
 - 前缀和
 - 哈希表
-categories:
+categories: 算法
 ---
 ## 思路
 nums数组的每一项都有对应的前缀和: nums的第0项到当前项的和。

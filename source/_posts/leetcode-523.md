@@ -1,5 +1,5 @@
 ---
-title: leetcode-523-checkSubarraySum
+title: 523-连续子数组和
 author: Sofar
 top: false
 cover: false
@@ -10,16 +10,14 @@ coverImg:
 password:
 summary: 同余定理：如果两个整数m、n满足n-m能被k整除，那么n和m对k同余
 tags:
-- leetcode
 - 哈希表
 - 前缀和
 - 同余
-categories:
+categories: 算法
 ---
 
 
 ```go
-
 func checkSubarraySum(nums []int, k int) bool {
     numLen := len(nums)
     if numLen < 2 {
