@@ -1,14 +1,7 @@
 ---
 title: 303-区域和检索
 author: Sofar
-top: false
-cover: false
-toc: true
-mathjax: true
 date: 2021-06-02 13:17:59
-coverImg:
-password:
-summary:
 tags:
 - 前缀和
 - 哈希表

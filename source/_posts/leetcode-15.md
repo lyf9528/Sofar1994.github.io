@@ -1,14 +1,7 @@
 ---
-title: 15-三数之和
+title: 15 - 三数之和
 author: Sofar
-top: false
-cover: false
-toc: true
-mathjax: true
 date: 2021-06-01 18:32:58
-coverImg:
-password:
-summary:
 tags:
 - 双指针
 categories: 算法

@@ -1,13 +1,7 @@
 ---
 title: Go并发编程示例
 author: Sofar
-top: false
-cover: false
-toc: true
-mathjax: true
 date: 2021-06-01 18:32:58
-password:
-summary:
 tags:
 - 并发编程 
 categories: go

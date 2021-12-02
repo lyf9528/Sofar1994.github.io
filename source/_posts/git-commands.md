@@ -1,14 +1,7 @@
 ---
 title: git常用命令
 author: Sofar
-top: false
-cover: false
-toc: true
-mathjax: true
 date: 2021-06-01 18:32:58
-password:
-summary:
-tags: 
 categories: git
 ---
 
